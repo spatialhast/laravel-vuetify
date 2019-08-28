@@ -1,29 +1,25 @@
 <template>
   <v-app>
+    <v-app-bar app>
+      <v-toolbar-title class="headline text-uppercase">
+        <span
+          to="/"
+        >Vuetify</span>&nbsp;
+        <span class="font-weight-light">App</span>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn text to="/">
+        <v-icon>help_outline</v-icon>
+        <span class="ml-2 mr-2">Home</span>
+      </v-btn>
+      <v-btn text to="/about">
+        <v-icon>help_outline</v-icon>
+        <span class="ml-2 mr-2">About</span>
+      </v-btn>
+    </v-app-bar>
+
     <v-content>
-      <v-container>
-        <v-row>
-          <v-col class="d-flex justify-center">
-            <h1>Laravel + Vuetify</h1>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col>
-            <v-card>
-              <v-card-text>
-                <v-text-field label="Foo"></v-text-field>
-                <v-btn>Bar</v-btn>
-              </v-card-text>
-            </v-card>
-            <div class="sass">
-                styled from sfc style block with SASS
-            </div>
-            <div class="scss">
-                styled from sfc style block with SCSS
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
+      Content
     </v-content>
   </v-app>
 </template>
